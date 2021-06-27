@@ -41,7 +41,7 @@ public class Simulator {
     Event event = this.events.poll();
     while (event != null) {
       System.out.println(event);
-      ArrayList<? extends Event> newEvents = event.simulate();
+      ArrayList<Event> newEvents = event.simulate();
       for (Event e : newEvents) {
         this.events.add(e);
       }

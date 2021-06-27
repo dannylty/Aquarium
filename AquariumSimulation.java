@@ -12,13 +12,13 @@ class AquariumSimulation extends Simulation {
    * The aquarium we are simulating. 
    */
   private Aquarium aquarium;
-  private ArrayList<? extends LivingObject> livingObjects;
+  private ArrayList<LivingObject> livingObjects;
 
   /** 
    * The list of customer arrival events to populate
    * the simulation with.
    */
-  private ArrayList<? extends Event> initEvents;
+  private ArrayList<Event> initEvents;
 
   /** 
    * Constructor for a shop simulation. 
@@ -46,7 +46,7 @@ class AquariumSimulation extends Simulation {
    * @return An array of events for the simulator.
    */
   @Override
-  public ArrayList<? extends Event> getInitialEvents() {
+  public ArrayList<Event> getInitialEvents() {
     return this.initEvents;
   }
 }

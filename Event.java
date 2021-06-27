@@ -70,5 +70,5 @@ abstract class Event implements Comparable<Event> {
    *
    * @return An array of new events to be scheduled by the simulator.
    */
-  public abstract ArrayList<? extends Event> simulate();
+  public abstract ArrayList<Event> simulate();
 }
