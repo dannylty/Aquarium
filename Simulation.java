@@ -18,5 +18,5 @@ abstract class Simulation {
    *         simulator can use to kick-start the 
    *         simulation.
    */
-  public abstract ArrayList<? extends Event> getInitialEvents();
+  public abstract ArrayList<Event> getInitialEvents();
 }
